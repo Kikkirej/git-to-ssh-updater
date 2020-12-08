@@ -15,7 +15,7 @@ def config_pruefen_und_update_remotes(path, remoteHost):
 
 if __name__ == '__main__':
     mainPfad = "/git"
-    remoteHost = raw_input("zu updatender Origin (github.com/srvgit01): ")
+    remoteHost = input("zu updatender Origin (github.com/srvgit01): ")
     for path in Path(mainPfad).rglob('.git'):
         print("Verarbeite " + str(path))
         config_pruefen_und_update_remotes(path, remoteHost)
